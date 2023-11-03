@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-img{
-    width: 100%;
-    border-radius: 50%;
-}
 
 a{
     text-decoration: none;
@@ -32,8 +28,10 @@ nav{
     gap: 2rem;
 }
 
-.nav-logo{
-    max-width: 100px;
+
+.nav-logo img{
+    width: 100%;
+    border-radius: 50%;
 }
 
 .nav-links{
@@ -121,8 +119,9 @@ header .image{
 }
 
 header .image img{
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
+    border-radius: 3%;
 }
 
 section .header{
@@ -194,64 +193,10 @@ section .header{
     color: #ccc;
 }
 
-.Knowledge{
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
-}
-
-.Knowledge .card{
-    padding: 3rem 2rem;
-    background-color: #27272a;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid transparent;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-}
-
-.Knowledge .card:hover{
-    background-color: #323232;
-    border-color: #fff;
-}
-
-.Knowledge .card .content{
-    flex:1;
-    margin-bottom: 2rem;
-}
-
-.Knowledge .card h4{
-    margin-bottom: 1rem;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.Knowledge .card h3{
-    color: #fff;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight: 600;
-    border-bottom: 2px dashed #fff;
-}
-
-.Knowledge .card p{
-    color: #fff;
-    margin-bottom: 0.75rem;
-}
-
-.Knowledge .card p i{
-    color: #ccc;
-    font-size: 1.2rem;
-    margin-right: 0.3rem;
-}
-
-.Knowledge .card button{
-    color: #fff;
-    background-color: transparent;
-    border-color: #1e40af
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
 }
 
 footer{
@@ -259,6 +204,11 @@ footer{
     display: grid;
     grid-template-columns: 400px repeat(3,1fr);
     gap: 2rem;
+}
+
+footer .column .logo img{
+    width: 100%;
+    border-radius: 50%;
 }
 
 footer .column .logo{
@@ -357,5 +307,3 @@ footer .column > a:hover{
         grid-template-columns: 1fr 150px;
     }
 }
-
-
