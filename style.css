@@ -28,8 +28,7 @@ nav{
     padding: 2rem 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content: space-evenly;
 }
 
 .nav-logo{
@@ -39,8 +38,9 @@ nav{
 .nav-links{
     list-style: none;
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    align-items:center;
+    justify-content: center;
+    gap: 3em;
 }
 
 .link a{
@@ -49,33 +49,44 @@ nav{
     color: rgb(255, 255, 255);
 }
 
-.link a:hover::after{
+.link :hover::after{
     width: 60%;
 }
 
 .btn2{
-    background-image: linear-gradient(to right, #0e1df1 0%, #a90071 100%);
-    border-radius: 40px;
+    border-radius: 20em;
     box-sizing: border-box;
     color: #fff;
     display: block;
-    height: 50px;
+    height: 2em;
     font-size: 1.4em;
-    padding: 4px;
+    padding: 0.5em;
     position: relative;
     width: 7em;
     z-index: 2;
     cursor: pointer;
+    background: grey;
   }
   
-  .btn2:hover{
-    color: #8100a8;
+.btn2:hover{
+    color: #000000;
   }
 
-.btn2:hover{
-    background-color: #1e40af;
-}
-
+.btn3{
+    border-radius: 20em;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    height: 2em;
+    font-size: 1.4em;
+    padding: 0.5em;
+    position: relative;
+    width: 6em;
+    cursor: pointer;
+    background: grey;
+    border-color: white;
+  }
+/*  */
 .container{
     max-width: 1200px;
     margin: auto;
@@ -118,6 +129,8 @@ header .content p{
 
 header .image{
     position: relative;
+    max-width: 100%;
+    height: auto;
 }
 
 header .image img{
@@ -146,15 +159,10 @@ section .header{
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
-    cursor: pointer;
     text-decoration-color:white ;
+    text-align: center;
+    text-justify: center;
 }
-
-.features .card:hover{
-    border-color: #fff;
-}
-
-
 
 .features .card .span{
     display: inline-block;
@@ -175,7 +183,8 @@ section .header{
 
 .features .card p{
     color: #ccc;
-    margin-bottom: 1rem;
+    text-align: center;
+    text-justify: center;
 }
 
 .features .card a{
@@ -248,12 +257,6 @@ section .header{
     margin-right: 0.3rem;
 }
 
-.Knowledge .card button{
-    color: #fff;
-    background-color: transparent;
-    border-color: #1e40af
-}
-
 footer{
     position: relative;
     display: grid;
@@ -303,26 +306,19 @@ footer .column > a{
     display: block;
     color: #ccc;
     margin-bottom: 1rem;
-    transition: sll 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 footer .column > a:hover{
     color: #1d4ed8;
 }
 
-.copyright{
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
-    color: #fff;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
 @media (width < 900px){
     .nav-links{
-        display: none;
+        display:inline-flex;
+        gap: 1em;
     }
+
     header{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -344,7 +340,10 @@ footer .column > a:hover{
     header .image::before{
         display: none;
     }
-
+    .nav-links{
+        display: grid;
+    }
+    
     .features{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -357,5 +356,3 @@ footer .column > a:hover{
         grid-template-columns: 1fr 150px;
     }
 }
-
-
