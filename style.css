@@ -72,6 +72,13 @@ nav{
     color: #000000;
   }
 
+  .nav-links2{
+    list-style: none;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    gap: 3em;
+}
 .btn3{
     border-radius: 20em;
     box-sizing: border-box;
@@ -105,7 +112,7 @@ header{
 header .content h4{
     margin-bottom: 1rem;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -117,14 +124,15 @@ header .content h1{
     line-height: 4rem;
 }
 
-header .content h1 span{
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #fff;
+ span{
+    color: rgb(163, 163, 163);
+    
 }
 
 header .content p{
     margin-bottom: 2rem;
     color: #ccc;
+    font-size: 1.3em;
 }
 
 header .image{
@@ -243,7 +251,7 @@ section .header{
     margin-bottom: 2rem;
     font-size: 2rem;
     font-weight: 600;
-    border-bottom: 2px dashed #fff;
+    border-bottom: 2px solid #fff;
 }
 
 .Knowledge .card p{
@@ -272,6 +280,7 @@ footer .column .logo{
 footer .column p{
     color: #ccc;
     margin-bottom: 2rem;
+    font-size: 1.2em;
 }
 
 footer .column .socials{

@@ -9,19 +9,16 @@ function scrollToElement(elementSelector, instance = 0) {
 }
 
 const link1 = document.getElementById("link1");
-//const link2 = document.getElementById("link2"); função foi 
-const link3 = document.getElementById("link3");
+const link2 = document.getElementById("link2");
 
 link1.addEventListener('click', () => {
     scrollToElement('.header');
 });
 
-// The button Knowledge was been off.
-//link2.addEventListener('click', () => {
-    // Scroll to the second element with "header" class
-//   scrollToElement('.header', 1);
-//});
-
-link3.addEventListener('click', () => {
+link2.addEventListener('click', () => {
     scrollToElement('.column');
 });
+
+
+
+ alert(`Welcome to my portfolio, any question don't hesitate to contact. I'm open to work. My contact is on Linkedin `)
