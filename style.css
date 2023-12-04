@@ -63,7 +63,6 @@ nav{
     padding: 0.5em;
     position: relative;
     width: 7em;
-    z-index: 2;
     cursor: pointer;
     background: grey;
   }
@@ -88,7 +87,7 @@ nav{
     font-size: 1.4em;
     padding: 0.5em;
     position: relative;
-    width: 6em;
+    width: 7em;
     cursor: pointer;
     background: grey;
     border-color: white;
